@@ -1,14 +1,13 @@
 import './App.css';
 import Header from "./components/Header"
+import Main from "./components/Main"
 
 function App() {
   return (
-        <div>
+        <>
         <Header/>
-        <h1 className="text-3xl font-bold underline">
-          Hello world!
-        </h1>
-        </div>
+        <Main/>
+        </>
   );
 }
 

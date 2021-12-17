@@ -12,6 +12,12 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+a{
+  outline: none;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+}
 
 .App-header {
   background-color: #282c34;
@@ -35,4 +41,59 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.word{
+  background: linear-gradient(
+          89.97deg,#6bd0e0 9.86%,#575cdb 69.45%,#8157db 99.95%),linear-gradient(
+          0deg,#59dbf0,#59dbf0);
+  font-weight: 700;
+  font-size: 70px;
+  line-height: 68px;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.subscribe-div{
+  position: sticky;
+  top: 10%;
+  left: 0;
+  width: fit-content;
+  height: 100vh;
+  display: flex;
+  /*margin-top: 20px;*/
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: space-evenly;
+  align-items: center;
+  /*padding: 2px;*/
+}
+.subscribe{
+  transform: rotate(90deg);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  text-align: right;
+  letter-spacing: .2em;
+  text-transform: uppercase;
+  margin-bottom: 45px;
+  color: #303030;
+}
+
+.line{
+  width: 1px;
+  height: 16px;
+  background: #303030;
+  margin: 11px 0;
+}
+
+.main{
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

@@ -1,6 +1,7 @@
 /* This example requires Tailwind CSS v2.0+ */
 import { Fragment } from 'react'
 import { Popover, Transition } from '@headlessui/react'
+import "../App.css"
 import {
     BookmarkAltIcon,
     CalendarIcon,
@@ -89,7 +90,7 @@ export default function Header() {
                             <span className="sr-only">Workflow</span>
                             <img
                                 className="h-8 w-auto sm:h-10"
-                                src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg"
+                                src="/logo.jpg"
                                 alt=""
                             />
                         </a>
