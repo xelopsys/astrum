@@ -1,6 +1,6 @@
 import styled from 'styled-components'
 import {mobile} from '../responsive'
-import {useState} from "react";
+import {useState, useEffect} from "react";
 import '../App.css'
 import {
     Instagram,
@@ -72,9 +72,15 @@ const Toggler = styled.div`
 
 export default function Main(){
     const [addClass, setAddClass] = useState(true);
-    setInterval(() => {
-        setAddClass(!addClass);
-    }, 5000)
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setAddClass(!addClass);
+        }, 2000);
+        return () => clearInterval(interval);
+    });
+
+
 
     return(
         <div className="main">
