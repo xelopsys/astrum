@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import {mobile} from '../responsive'
+import {macbook, ipad, mobile, miniMobile} from '../responsive'
 import {useState, useEffect} from "react";
 import '../App.css'
 import {
@@ -7,6 +7,8 @@ import {
     Telegram,
     Facebook
 } from '@mui/icons-material';
+
+
 const Subscribe = styled.div`
   ${mobile({display: "none"})}
 `;
@@ -14,21 +16,48 @@ const Subscribe = styled.div`
 
 const Div = styled.div`
   width: 90vw;
-  height: 80vh;
+  height: 90vh;
   //margin: auto;
   padding: 80px 80px;
   background-color: #f0f5fd;
+  box-sizing: border-box;
+  ${mobile({
+    padding: 0, 
+    borderRadius: "10px",
+  })}
+  ${ipad({margin: "auto"})}
+  //box-sizing: content-box;
 `;
 
 const Word = styled.div`
+  word-break: keep-all;
+  word-wrap: break-word;
   position: relative;
   z-index: 1;
-  width: fit-content;
-  height: auto;
+  width: 100%;
+  height: min-content;
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
+  //justify-content: flex-end;
+  //align-content: center;
+  //align-items: center;
   text-align: left;
+  box-sizing: border-box;
+  //box-sizing: content-box;
+  ${mobile({
+    borderRadius: "10px",
+    display: "flex",
+    flexDirection: "column",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    alignContent: "center",
+    alignItems: "center",
+    textAlign: "center",
+    padding: "10px",
+    // height: "min-height"
+  })}
+  
 `
 
 
@@ -42,6 +71,11 @@ const Image = styled.div`
   justify-content: flex-end;
   right: 10px;
   width: 50%;
+  ${ipad({
+    width: "60%",
+    top: "50%"
+  })}
+  ${mobile({display: "none"})}
   &::after{
     content: "";
     position: absolute;
@@ -105,8 +139,6 @@ export default function Main(){
                     </h3>
                     <p className="sub-text">тебя ждет программирование, тестирование, прокачка
                         soft-скиллов, <br/> крутое резюме и внушительное портфолио проектов</p>
-
-                </Word>
                     <Button>
                         <a href="/" className="button_consultation">
                             Бесплатная консультация
@@ -116,17 +148,21 @@ export default function Main(){
                             </svg>
                         </a>
                     </Button>
-                <Toggler>
-                    {addClass ? (<p className="">
-                        НЕ ОСТАВАЙСЯ НА МЕСТЕ - ДВИГАЙСЯ ✊
-                    </p>) : (<p className="">
-                        НАША TECH МИССИЯ -
-                        <br/>
-                        РАЗВИТЬ НАВЫКИ 21-ГО DIGITAL ВЕКА
-                    </p>)}
+
+                    <Toggler>
+                        {addClass ? (<p className="">
+                            НЕ ОСТАВАЙСЯ НА МЕСТЕ - ДВИГАЙСЯ ✊
+                        </p>) : (<p className="">
+                            НАША TECH МИССИЯ -
+                            <br/>
+                            РАЗВИТЬ НАВЫКИ 21-ГО DIGITAL ВЕКА
+                        </p>)}
 
 
-                </Toggler>
+                    </Toggler>
+                </Word>
+
+
 
                 <Image>
                     <img src="https://techmission.pro/wp-content/uploads/2020/12/monitor.png" alt=""/>
