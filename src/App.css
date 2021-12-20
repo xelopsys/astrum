@@ -1,46 +1,9 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-a{
-  outline: none;
-  text-decoration: none;
-  list-style: none;
-  border: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.main{
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100vw;
+  height: 100vh;
 }
 
 .word{
@@ -58,7 +21,7 @@ a{
 
 .subscribe-div{
   position: sticky;
-  top: 10%;
+  /*top: 10%;*/
   left: 0;
   width: fit-content;
   height: 100vh;
@@ -66,9 +29,10 @@ a{
   /*margin-top: 20px;*/
   flex-direction: column;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: space-evenly;
+  justify-content: center;
+  align-content: center;
   align-items: center;
+  padding-bottom: 200px;
   /*padding: 2px;*/
 }
 .subscribe{
@@ -140,4 +104,17 @@ a{
 }
 .disabled{
   display: none!important;
+}
+
+@media(max-width: 650px){
+  .word{
+    font-size: 50px;
+  }
+  .sub-word{
+    font-size: 30px;
+    line-height: 2rem;
+  }
+  .sub-text{
+    font-size: 14px;
+  }
 }

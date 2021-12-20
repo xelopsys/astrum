@@ -173,6 +173,9 @@ export default function Header() {
                         <a href="/" className="text-base font-medium text-gray-500 hover:text-gray-900">
                             Docs
                         </a>
+                        <a href="/" className="text-base font-medium text-gray-500 hover:text-gray-900">
+                            News
+                        </a>
 
                         <Popover className="relative">
                             {({ open }) => (
