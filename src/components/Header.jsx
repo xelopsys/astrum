@@ -200,6 +200,12 @@ export default function Header() {
               Pricing
             </a>
             <a
+                href="/home-2"
+                className="text-base font-medium text-gray-500 hover:text-gray-900"
+            >
+              another page
+            </a>
+            <a
               href="/"
               className="text-base font-medium text-gray-500 hover:text-gray-900"
             >

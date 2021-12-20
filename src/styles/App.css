@@ -9,11 +9,11 @@
 .word {
   background: linear-gradient(
       89.97deg,
-      #6bd0e0 9.86%,
-      #575cdb 69.45%,
-      #8157db 99.95%
+      #5531D0 9.86%,
+      #979bf5 69.45%,
+      #bca7e8 99.95%
     ),
-    linear-gradient(0deg, #59dbf0, #59dbf0);
+    linear-gradient(0deg, #5531D0, #59dbf0);
   font-weight: 700;
   font-size: 70px;
   line-height: 68px;
