@@ -1,16 +1,20 @@
 import './App.css';
-import Header from "./components/Header"
-// import Main from "./components/Main"
-import HomePage from "./components/Main1"
+import React from "react";
+import {
+    BrowserRouter as Router,
+    Route,
+} from "react-router-dom";
+
+import Home from "./pages/Home";
 
 function App() {
-  return (
+    return (
         <>
-        <Header/>
-        {/*<Main/>*/}
-            <HomePage/>
+            <Router>
+                <Route path="/" component={Home} />
+            </Router>
         </>
-  );
+    );
 }
 
 export default App;
