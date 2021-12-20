@@ -1,4 +1,4 @@
-.main{
+.main {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -6,20 +6,24 @@
   height: 100vh;
 }
 
-.word{
+.word {
   background: linear-gradient(
-          89.97deg,#6bd0e0 9.86%,#575cdb 69.45%,#8157db 99.95%),linear-gradient(
-          0deg,#59dbf0,#59dbf0);
+      89.97deg,
+      #6bd0e0 9.86%,
+      #575cdb 69.45%,
+      #8157db 99.95%
+    ),
+    linear-gradient(0deg, #59dbf0, #59dbf0);
   font-weight: 700;
   font-size: 70px;
   line-height: 68px;
   text-transform: uppercase;
   margin-bottom: 15px;
-  -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
-.subscribe-div{
+.subscribe-div {
   position: sticky;
   /*top: 10%;*/
   left: 0;
@@ -35,50 +39,49 @@
   padding-bottom: 200px;
   /*padding: 2px;*/
 }
-.subscribe{
+.subscribe {
   transform: rotate(90deg);
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
   text-align: right;
-  letter-spacing: .2em;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   margin-bottom: 45px;
   color: #303030;
 }
 
-.line{
+.line {
   width: 1px;
   height: 16px;
   background: #303030;
   margin: 11px 0;
 }
 
-.main{
+.main {
   width: 100vw;
   height: 100vh;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
-.sub-word{
+.sub-word {
   font-size: 40px;
   /*line-height: 30px;*/
   font-weight: 700;
   color: #303030;
   margin-bottom: 24px;
   line-height: 3rem;
-
 }
 
-.sub-text{
+.sub-text {
   font-weight: 700;
   font-size: 18px;
   line-height: 24px;
   color: #303030;
   margin-bottom: 13px;
 }
-.button_consultation{
+.button_consultation {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -91,30 +94,29 @@
   text-decoration: none;
   border-radius: 100px;
   padding: 20px 0;
-  background: -o-linear-gradient(left,#00ff6f 1.04%,#1bffff 100%);
-  background: linear-gradient(
-          90deg,#00ff6f 1.04%,#1bffff 100%);
+  background: -o-linear-gradient(left, #00ff6f 1.04%, #1bffff 100%);
+  background: linear-gradient(90deg, #00ff6f 1.04%, #1bffff 100%);
   margin-bottom: 80px;
   width: 420px;
   border: 2px solid transparent;
-  transition: all .2s ease-in-out;
+  transition: all 0.2s ease-in-out;
 }
-.active{
-  display: block!important;
+.active {
+  display: block !important;
 }
-.disabled{
-  display: none!important;
+.disabled {
+  display: none !important;
 }
 
-@media(max-width: 650px){
-  .word{
+@media (max-width: 650px) {
+  .word {
     font-size: 50px;
   }
-  .sub-word{
+  .sub-word {
     font-size: 30px;
     line-height: 2rem;
   }
-  .sub-text{
+  .sub-text {
     font-size: 14px;
   }
 }
