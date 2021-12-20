@@ -1,16 +1,9 @@
-
-import Header from "../components/Header"
-import Main from "../components/Main"
-// import HomePage from "../components/Main1"
-
-function Home() {
-    return (
-        <>
-            <Header/>
-            <Main/>
-            {/*<HomePage/>*/}
-        </>
-    );
-}
-
-export default Home;
+import React from "react";
+import Main from "../components/Main";
+export const Home = () => {
+  return (
+    <>
+      <Main />
+    </>
+  );
+};
