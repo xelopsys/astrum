@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ipad, mobile } from "../responsive";
+import { ipad, mobile } from "../utils/responsive";
 import { useState, useEffect } from "react";
 import { Instagram, Telegram, Facebook } from "@mui/icons-material";
 
