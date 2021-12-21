@@ -24,8 +24,8 @@ const Div = styled.div`
 const Word = styled.div`
   word-break: keep-all;
   word-wrap: break-word;
-  position: relative;
-  z-index: 1;
+  /* position: relative; */
+  z-index: 0;
   width: 100%;
   height: min-content;
   display: flex;
@@ -66,7 +66,7 @@ const Image = styled.div`
     width: "60%",
     top: "50%",
   })}
-  ${mobile({ display: "none" })}
+  ${ipad({ display: "none" })}
   &::after {
     content: "";
     position: absolute;
@@ -84,16 +84,28 @@ const Button = styled.div`
   margin-top: 2%;
   width: fit-content;
   height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
   ${mobile({
     // width: "300px",
     margin: "auto",
-    textAlign: "left",
+    textAlign: "left"
     })}
+    .button_consultation{
+      ${mobile({
+        padding: "7px 15px",
+        width: "90%",
+        fontSize: "14px",
+        marginBottom: "18px"
+      })}
+    }
 `;
 
 const Toggler = styled.div`
-  width: fit-content;
-  height: max-content;
+  width: max-content;
+  height: min-content;
   color: black;
 `;
 
@@ -164,7 +176,6 @@ export default function Main() {
             )}
           </Toggler>
         </Word>
-
         <Image>
           <img
             src="https://techmission.pro/wp-content/uploads/2020/12/monitor.png"

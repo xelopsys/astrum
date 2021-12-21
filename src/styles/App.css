@@ -93,11 +93,11 @@
   color: #303030;
   text-decoration: none;
   border-radius: 100px;
-  padding: 20px 0;
+  padding: 20px 40px;
   background: -o-linear-gradient(left, #00ff6f 1.04%, #1bffff 100%);
   background: linear-gradient(90deg, #00ff6f 1.04%, #1bffff 100%);
   margin-bottom: 80px;
-  width: 420px;
+  width: 100%;
   border: 2px solid transparent;
   transition: all 0.2s ease-in-out;
 }
