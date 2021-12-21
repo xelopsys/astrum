@@ -47,6 +47,7 @@ const Word = styled.div`
     alignItems: "center",
     textAlign: "center",
     padding: "10px",
+    height: "max-content"
     // height: "min-height"
   })}
 `;
@@ -83,6 +84,11 @@ const Button = styled.div`
   margin-top: 2%;
   width: fit-content;
   height: auto;
+  ${mobile({
+    // width: "300px",
+    margin: "auto",
+    textAlign: "left",
+    })}
 `;
 
 const Toggler = styled.div`
