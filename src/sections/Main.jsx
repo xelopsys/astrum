@@ -46,8 +46,8 @@ const Word = styled.div`
     alignContent: "center",
     alignItems: "center",
     textAlign: "center",
-    padding: "10px",
-    height: "max-content"
+    padding: "10px 10px 20px 10px",
+    height: "min-content"
     // height: "min-height"
   })}
 `;
