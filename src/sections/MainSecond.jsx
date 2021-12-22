@@ -15,6 +15,9 @@ const Button = styled.div`
   a{
     margin-bottom: 20px;
   }
+  svg{
+    margin: 5px 5px 5px 8px;
+  }
 `;
 
 const Subscribe = styled.div`
@@ -59,7 +62,7 @@ export default function HomePage() {
         </div>
       </Subscribe>
 
-      <div className="px-4 py-16 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-20">
+      <div className="px-4 py-10 mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8 lg:py-15">
         <div className="grid gap-10 lg:grid-cols-2">
           <div className="flex flex-col justify-center md:pr-8 xl:pr-0 lg:max-w-lg">
             <div className="flex items-center justify-center w-16 h-16 mb-4 rounded-full bg-teal-accent-400"></div>
@@ -103,7 +106,7 @@ export default function HomePage() {
                   width="30"
                   height="15"
                   viewBox="0 0 30 15"
-                  fill="#303030"
+                  fill="#fff"
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path d="M21.7721 0.0666504L20.4359 1.27938L26.3823 6.67581H0V8.39088H26.3823L20.4359 13.7873L21.7721 15L30 7.53329L21.7721 0.0666504Z" />
